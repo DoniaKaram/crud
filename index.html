@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+<div class="head mb-5">
+    
+    <h1 class="text-center">CRUD SYSTEM</h1>
+</div>
+       <div class="crud">
+    
+            <label >Prouduct name</label>
+            <input type="text" id="pname" class="form-control ">
+            <div class="alert alert-danger d-none " role="alert" id="alert1">
+                Start with capital letter,must contain 3-10 characters
+              </div>
+            <label >Prouduct Catogery</label>
+            <input type="text" id="pCatogery" class="form-control">
+            <div class="alert alert-danger d-none " role="alert" id="alert2">
+            must contain minimum 5 characters,can't contain special characters
+              </div>
+            <label >Prouduct Price</label>
+            <input type="text" id="pPrice" class="form-control">
+            <div class="alert alert-danger d-none " role="alert" id="alert4">
+                Prouduct Price must be in range 100
+                  </div>
+            <label >Prouduct Discription</label>
+            <input type="text" id="pDescrip" class="form-control">
+            <div class="alert alert-danger d-none " role="alert" id="alert3">
+                must contain minimum 3 characters,can't contain special characters
+                  </div>
+            <div class="submit">
+                <button type="button" class="btn btn-info mt-3 " id="submit">Add Product</button>
+            </div>
+            
+
+
+      
+       </div>
+       <div class="Data mt-5">
+        <input type="search" id="pSearch" class="form-control" placeholder="Search Your Product" onblur="search()";>
+        <table style="width:100%" class="mt-3">
+            <thead class="bg-info p-5" >
+            <tr>
+                <th >ID</th>
+              
+                
+                <th>name</th>
+            
+        
+            <th>Catogery</th>
+
+            
+            <th>Price</th>
+
+            
+         
+            <th>Discription</th>
+            <th>Update</th>
+            <th>Delete</th>
+            </tr>
+            </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        
+        </table>
+
+       </div>
+        <script src="main.js"></script>
+    </body>
+</html>

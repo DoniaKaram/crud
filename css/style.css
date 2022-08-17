@@ -1,0 +1,21 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.crud,.Data
+{
+
+   
+    padding: 30px;
+    border: 1px solid #ffffff;
+    margin: auto;
+    width: 80%;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.submit
+{
+    margin:0 auto;
+    width: 20%;
+}
